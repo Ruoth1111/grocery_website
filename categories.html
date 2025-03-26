@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - GrosFresh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">GrosFresh</a></h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-icons">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-count" id="cart-count">0</span></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Product Categories</h1>
+                <p>Browse our wide range of fresh products by category</p>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <div class="container">
+                <div class="category-filter">
+                    <button class="active" data-filter="all">All Categories</button>
+                    <button data-filter="fruits">Fruits</button>
+                    <button data-filter="vegetables">Vegetables</button>
+                    <button data-filter="dairy">Dairy</button>
+                    <button data-filter="beverages">Beverages</button>
+                </div>
+
+                <div class="category-block">
+                    <div class="category-header">
+                        <h2>Fruits</h2>
+                        <p>Fresh and seasonal fruits from local farms</p>
+                    </div>
+                    <div class="category-products">
+                        <div class="product-grid">
+                            <div class="product-card" data-id="fruit1" data-category="fruits">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Organic Apples">
+                                    <div class="product-tag sale">Sale</div>
+                                </div>
+                                <div class="product-info">
+                                    <h3>Organic Apples</h3>
+                                    <div class="price">$2.99 <span>$3.99</span></div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-card" data-id="fruit2" data-category="fruits">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Fresh Avocado">
+                                    <div class="product-tag organic">Organic</div>
+                                </div>
+                                <div class="product-info">
+                                    <h3>Fresh Avocado</h3>
+                                    <div class="price">$1.99 <span>$2.49</span></div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-card" data-id="fruit3" data-category="fruits">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Fresh Strawberries">
+                                </div>
+                                <div class="product-info">
+                                    <h3>Fresh Strawberries</h3>
+                                    <div class="price">$3.49</div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-all">
+                            <a href="products.html?category=fruits" class="btn">View All Fruits</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-block">
+                    <div class="category-header">
+                        <h2>Vegetables</h2>
+                        <p>Organic and fresh vegetables</p>
+                    </div>
+                    <div class="category-products">
+                        <div class="product-grid">
+                            <div class="product-card" data-id="veg1" data-category="vegetables">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Fresh Broccoli">
+                                    <div class="product-tag organic">Organic</div>
+                                </div>
+                                <div class="product-info">
+                                    <h3>Fresh Broccoli</h3>
+                                    <div class="price">$1.49</div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-card" data-id="veg2" data-category="vegetables">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1582284540020-8acbe03f4924?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Carrots Bundle">
+                                </div>
+                                <div class="product-info">
+                                    <h3>Carrots Bundle</h3>
+                                    <div class="price">$2.29 <span>$2.99</span></div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-card" data-id="veg3" data-category="vegetables">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1518977956812-cd3dbadaaf31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Red Bell Peppers">
+                                    <div class="product-tag new">New</div>
+                                </div>
+                                <div class="product-info">
+                                    <h3>Red Bell Peppers</h3>
+                                    <div class="price">$1.79</div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-all">
+                            <a href="products.html?category=vegetables" class="btn">View All Vegetables</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-block">
+                    <div class="category-header">
+                        <h2>Dairy</h2>
+                        <p>Fresh dairy products from local farms</p>
+                    </div>
+                    <div class="category-products">
+                        <div class="product-grid">
+                            <div class="product-card" data-id="dairy2" data-category="dairy">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1598965675045-45c5e72c7d05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Farm Fresh Eggs">
+                                    <div class="product-tag sale">Sale</div>
+                                </div>
+                                <div class="product-info">
+                                    <h3>Farm Fresh Eggs</h3>
+                                    <div class="price">$4.99</div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-card" data-id="dairy1" data-category="dairy">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Whole Milk">
+                                </div>
+                                <div class="product-info">
+                                    <h3>Whole Milk</h3>
+                                    <div class="price">$3.49 <span>$3.99</span></div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-card" data-id="dairy3" data-category="dairy">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Greek Yogurt">
+                                </div>
+                                <div class="product-info">
+                                    <h3>Greek Yogurt</h3>
+                                    <div class="price">$2.99 <span>$3.49</span></div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-all">
+                            <a href="products.html?category=dairy" class="btn">View All Dairy Products</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-block">
+                    <div class="category-header">
+                        <h2>Beverages</h2>
+                        <p>Refreshing and healthy drink options</p>
+                    </div>
+                    <div class="category-products">
+                        <div class="product-grid">
+                            <div class="product-card" data-id="beverage1" data-category="beverages">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Fresh Orange Juice">
+                                    <div class="product-tag sale">Sale</div>
+                                </div>
+                                <div class="product-info">
+                                    <h3>Fresh Orange Juice</h3>
+                                    <div class="price">$3.99 <span>$4.99</span></div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-card" data-id="beverage2" data-category="beverages">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Green Tea">
+                                </div>
+                                <div class="product-info">
+                                    <h3>Green Tea</h3>
+                                    <div class="price">$4.49</div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                            <div class="product-card" data-id="beverage3" data-category="beverages">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Coconut Water">
+                                    <div class="product-tag organic">Organic</div>
+                                </div>
+                                <div class="product-info">
+                                    <h3>Coconut Water</h3>
+                                    <div class="price">$2.99</div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-all">
+                            <a href="products.html?category=beverages" class="btn">View All Beverages</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>GrosFresh</h3>
+                <p>Your one-stop shop for fresh groceries and high-quality products delivered right to your doorstep.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Grocery St, Food City, FC 12345</li>
+                    <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                    <li><i class="fas fa-envelope"></i> info@grosfresh.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Download Our App</h3>
+                <p>Shop on the go with our mobile app</p>
+                <div class="app-links">
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/320px-Google_Play_Store_badge_EN.svg.png" alt="Google Play"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/320px-Download_on_the_App_Store_Badge.svg.png" alt="App Store"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 GrosFresh. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/categories.js"></script>
+</body>
+</html> 

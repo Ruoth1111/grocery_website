@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - GrosFresh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html">GrosFresh</a></h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-icons">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="checkout-container">
+            <div class="checkout-header">
+                <h1>Checkout</h1>
+                <div class="checkout-steps">
+                    <div class="step completed">
+                        <div class="step-number">1</div>
+                        <span>Shopping Cart</span>
+                    </div>
+                    <div class="step-connector completed"></div>
+                    <div class="step active">
+                        <div class="step-number">2</div>
+                        <span>Payment</span>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <span>Confirmation</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="checkout-content">
+                <div class="checkout-details">
+                    <section class="billing-section">
+                        <h2>Billing Details</h2>
+                        <form id="billing-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address">Street Address</label>
+                                <input type="text" id="address" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="zipcode">Zip Code</label>
+                                    <input type="text" id="zipcode" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select id="country" required>
+                                        <option value="">Select Country</option>
+                                        <option value="US">United States</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <option value="AU">Australia</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    
+                    <section class="payment-section">
+                        <h2>Payment Method</h2>
+                        <div class="payment-options">
+                            <div class="payment-option active">
+                                <input type="radio" id="credit-card" name="payment-method" checked>
+                                <label for="credit-card">
+                                    <i class="fas fa-credit-card"></i>
+                                    Credit Card
+                                </label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="paypal" name="payment-method">
+                                <label for="paypal">
+                                    <i class="fab fa-paypal"></i>
+                                    PayPal
+                                </label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="apple-pay" name="payment-method">
+                                <label for="apple-pay">
+                                    <i class="fab fa-apple-pay"></i>
+                                    Apple Pay
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div id="credit-card-form" class="payment-form">
+                            <div class="credit-card-section">
+                                <div class="form-group">
+                                    <label for="card-number">Card Number</label>
+                                    <div class="input-icon">
+                                        <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                                        <i class="far fa-credit-card"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="card-name">Cardholder Name</label>
+                                    <input type="text" id="card-name" placeholder="John Doe" required>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="expiry">Expiry Date</label>
+                                        <input type="text" id="expiry" placeholder="MM/YY" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cvv">CVV</label>
+                                        <div class="input-icon">
+                                            <input type="text" id="cvv" placeholder="123" required>
+                                            <i class="fas fa-question-circle" title="3-digit security code on the back of your card"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="paypal-form" class="payment-form" style="display: none;">
+                            <p>You will be redirected to PayPal to complete your payment.</p>
+                            <button class="paypal-button">
+                                <i class="fab fa-paypal"></i>
+                                Proceed with PayPal
+                            </button>
+                        </div>
+                        
+                        <div id="apple-pay-form" class="payment-form" style="display: none;">
+                            <p>You'll be prompted to authenticate with Apple Pay.</p>
+                            <button class="apple-pay-button">
+                                <i class="fab fa-apple-pay"></i>
+                                Pay with Apple Pay
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="checkout-summary">
+                    <div class="summary-card">
+                        <h2>Order Summary</h2>
+                        <div class="summary-items" id="summary-items">
+                            <!-- Item list will be populated by JavaScript -->
+                        </div>
+                        
+                        <div class="summary-totals">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span id="subtotal">$0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span id="shipping">$4.99</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax</span>
+                                <span id="tax">$0.00</span>
+                            </div>
+                            <div class="coupon-code">
+                                <input type="text" placeholder="Enter coupon code">
+                                <button>Apply</button>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span id="total">$0.00</span>
+                            </div>
+                            <button id="place-order" class="place-order-btn">
+                                Place Order
+                            </button>
+                            <p class="security-note">
+                                <i class="fas fa-lock"></i>
+                                Your payment information is secure. We use industry-standard encryption.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>GrosFresh</h3>
+                <p>Your one-stop shop for fresh groceries and high-quality products delivered right to your doorstep.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Grocery St, Food City, FC 12345</li>
+                    <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+                    <li><i class="fas fa-envelope"></i> info@grosfresh.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Download Our App</h3>
+                <p>Shop on the go with our mobile app</p>
+                <div class="app-links">
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/320px-Google_Play_Store_badge_EN.svg.png" alt="Google Play"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/320px-Download_on_the_App_Store_Badge.svg.png" alt="App Store"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 GrosFresh. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Order Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Order Placed Successfully!</h2>
+                <p>Thank you for your order. Your order #<span id="order-number">12345</span> has been placed successfully.</p>
+                <p>A confirmation email has been sent to <span id="confirmation-email">your@email.com</span>.</p>
+                <div class="estimated-delivery">
+                    <i class="fas fa-truck"></i>
+                    <p>Estimated delivery: <strong>May 15, 2023</strong></p>
+                </div>
+                <div class="modal-buttons">
+                    <a href="index.html" class="btn">Continue Shopping</a>
+                    <a href="#" class="btn btn-outline">View Order Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>
