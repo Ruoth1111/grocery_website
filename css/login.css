@@ -176,6 +176,14 @@
     transition: background-color 0.3s;
 }
 
+.social-btn.google {
+    color: #4285F4;
+}
+
+.social-btn.google i {
+    font-size: 20px;
+}
+
 .social-btn.google:hover {
     background-color: #f1f1f1;
 }
@@ -190,9 +198,8 @@
     background-color: #375694;
 }
 
-.social-btn img {
-    width: 20px;
-    height: 20px;
+.social-btn i {
+    font-size: 18px;
 }
 
 .register-link {
